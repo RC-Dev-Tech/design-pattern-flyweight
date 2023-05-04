@@ -39,15 +39,15 @@ Flyweight設計模式旨在最小化對記憶體和計算資源的使用，通�
 
 ## 實作成員
 * Flyweight
- * 定義一個介面，用於共享具有相同狀態的物件。
+  * 定義一個介面，用於共享具有相同狀態的物件。
 * ConcreteFlyweight
- * 實現Flyweight介面，並保存其共享狀態。
+  * 實現Flyweight介面，並保存其共享狀態。
 * FlyweightFactory
- * 維護一個Flyweight池，用於存儲已創建的Flyweight對象。<br>
-   當客戶端請求一個Flyweight時，如果池中已經存在相應的對象，則直接返回該對象，<br>
-   否則創建一個新的對象並將其添加到池中。
+  * 維護一個Flyweight池，用於存儲已創建的Flyweight對象。<br>
+    當客戶端請求一個Flyweight時，如果池中已經存在相應的對象，則直接返回該對象，<br>
+    否則創建一個新的對象並將其添加到池中。
 * Client
- * 使用FlyweightFactory來創建和存取Flyweight物件。由於Client只操作Flyweight的共享狀態，所以可以與Flyweight的具體實現解耦。
+  * 使用FlyweightFactory來創建和存取Flyweight物件。由於Client只操作Flyweight的共享狀態，所以可以與Flyweight的具體實現解耦。
 
 ---
 <br>
