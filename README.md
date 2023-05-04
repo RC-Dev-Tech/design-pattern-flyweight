@@ -1,6 +1,4 @@
-# design-pattern-flyweight
-# design-pattern-bridge
-# ![](https://drive.google.com/uc?id=10INx5_pkhMcYRdx_OO4rXNXxcsvPtBYq) Bridge 橋接模式  
+# ![](https://drive.google.com/uc?id=10INx5_pkhMcYRdx_OO4rXNXxcsvPtBYq) Flyweight 享元模式 
 > ##### 理論請自行找，網路上有很多相關的文章，這邊只關注於範例實作的部分.
 
 ---
@@ -46,7 +44,8 @@ Flyweight設計模式旨在最小化對記憶體和計算資源的使用，通�
  * 實現Flyweight介面，並保存其共享狀態。
 * FlyweightFactory
  * 維護一個Flyweight池，用於存儲已創建的Flyweight對象。<br>
-   當客戶端請求一個Flyweight時，如果池中已經存在相應的對象，則直接返回該對象，否則創建一個新的對象並將其添加到池中。
+   當客戶端請求一個Flyweight時，如果池中已經存在相應的對象，則直接返回該對象，<br>
+   否則創建一個新的對象並將其添加到池中。
 * Client
  * 使用FlyweightFactory來創建和存取Flyweight物件。由於Client只操作Flyweight的共享狀態，所以可以與Flyweight的具體實現解耦。
 
