@@ -47,7 +47,7 @@ Flyweight設計模式旨在最小化對記憶體和計算資源的使用，通�
 ---
 
 ## 實作範例:
-- [待補...]() 
+- [Example](https://github.com/RC-Dev-Tech/design-pattern-flyweight/blob/main/C%2B%2B/main.cpp) - Prototype Pattern (C++) 
 
 ---
 
